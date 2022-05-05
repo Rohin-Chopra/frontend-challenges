@@ -41,15 +41,15 @@ const Navbar = () => {
               onClick={toggleActive}
             />
             <NavDropdown className="mb-4 lg:mb-0 mr-8" title="Features">
-              <div className="mb-2">
+              <div>
                 <Image src="/icon-todo.svg" width={15} height={15} />
                 <span className="ml-2">Todo List</span>
               </div>
-              <div className="mb-2">
+              <div>
                 <Image src="/icon-calendar.svg" width={15} height={15} />{' '}
                 <span className="ml-2">Calendar</span>
               </div>
-              <div className="mb-2">
+              <div>
                 <Image src="/icon-reminders.svg" width={15} height={15} />{' '}
                 <span className="ml-2">Reminders</span>
               </div>
@@ -59,9 +59,9 @@ const Navbar = () => {
               </div>
             </NavDropdown>
             <NavDropdown title="Company" className="mb-4 lg:mb-0 mr-8">
-              <div className="mb-2">History</div>
-              <div className="mb-2">Our Team</div>
-              <div className="mb-2">Blog</div>
+              <div>History</div>
+              <div>Our Team</div>
+              <div>Blog</div>
             </NavDropdown>
             <NavLink className="mb-4 lg:mb-0 mr-8" href="#">
               Careers

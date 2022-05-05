@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { Children, cloneElement, useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
 
 const NavDropdown = ({ title, children, className, ...props }) => {
@@ -57,11 +57,15 @@ const NavDropdown = ({ title, children, className, ...props }) => {
           'hidden opacity-0 pointer-events-none': !isActive,
         })}
       >
-        {/*
-        todo: remove is active when a children is clicked
-        todo: apply styles on children
-        */}
-        {children}
+        {Children.map(children, (child, index) =>
+          cloneElement(child, {
+            onClick: toggleDropdown,
+            className: `${
+              index + 1 !== Children.count(children) ? 'mb-4' : ''
+            }  text-gray hover:text-black transition-colors duration-300`,
+            style: { ...child.props.style },
+          })
+        )}
       </div>
     </div>
   );
