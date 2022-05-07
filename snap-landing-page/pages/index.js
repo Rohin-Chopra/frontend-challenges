@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Fragment } from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Navbar from '../components/Navbar';
 
 const Home = () => {
@@ -38,6 +39,27 @@ const Home = () => {
           </div>
         </div>
       </main>
+      <footer className="py-8 text-gray text-center">
+        Developed By Rohin Chopra
+        <div className="flex justify-center text-4xl">
+          <a
+            className="mr-4 cursor-pointer"
+            href="https://www.linkedin.com/in/rohin-chopra-2b38791a0/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FaLinkedin className="hover:text-linkedin transition-colors duration-300" />
+          </a>
+          <a
+            className="mr-4 cursor-pointer"
+            href="https://github.com/Rohin1212"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FaGithub className="hover:text-github transition-colors duration-300" />
+          </a>
+        </div>
+      </footer>
     </Fragment>
   );
 };

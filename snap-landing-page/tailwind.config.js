@@ -9,6 +9,8 @@ module.exports = {
       black: '#141414',
       almostWhite: '#fafafa',
       white: '#fff',
+      linkedin: '#0077b5',
+      github: '#171515',
     },
     extend: {
       spacing: {},
