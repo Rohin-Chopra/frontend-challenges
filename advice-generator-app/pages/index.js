@@ -57,7 +57,7 @@ const Home = () => {
           </button>
         </div>
       </main>
-      <footer className="bg-dark-grayish-glue text-neon-green py-4 text-center font-semibold absolute bottom-0 w-full">
+      <footer className="border-t border-neon-green bg-dark-grayish-glue text-neon-green py-4 text-center font-semibold absolute bottom-0 w-full">
         Challenge by{' '}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
