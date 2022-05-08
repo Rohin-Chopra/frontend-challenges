@@ -33,7 +33,7 @@ const Home = () => {
       <Head>
         <title>Advice Generator App</title>
       </Head>
-      <main className="flex justify-center items-start h-full">
+      <main className="flex justify-center items-start h-full px-4">
         <div className="mt-16 pt-8 pb-16 px-6 bg-dark-grayish-glue rounded-lg shadow-lg w-full lg:max-w-lg text-center relative flex flex-col items-center justify-center">
           <p className="text-neon-green text-sm mb-4 font-bold">
             ADVICE #{advice?.id}
