@@ -60,18 +60,22 @@ const Home = () => {
         </div>
       </main>
       <footer className="border-t border-neon-green bg-dark-grayish-glue text-neon-green py-4 text-center font-semibold absolute bottom-0 w-full">
-        Challenge by{' '}
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Frontend Mentor
-        </a>{' '}
-        | Developed by{' '}
-        <a href="https://rohinchopra.com" target="_blank" rel="noreferrer">
-          Rohin Chopra
-        </a>
+        <p className="mb-2">
+          Challenge by{' '}
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Frontend Mentor
+          </a>
+        </p>
+        <p className="mb-2">
+          Developed by{' '}
+          <a href="https://rohinchopra.com" target="_blank" rel="noreferrer">
+            Rohin Chopra
+          </a>
+        </p>
         <div className="flex justify-center text-4xl">
           <a
             className="mr-4 cursor-pointer hover:text-linkedin"
