@@ -21,7 +21,7 @@ const Home = () => {
     const res = await fetch('https://api.adviceslip.com/advice');
     const data = await res.json();
     setIsLoading(false);
-    setAdvice(data.slip.advice);
+    setAdvice(data.slip);
   };
 
   useEffect(() => {
@@ -35,10 +35,12 @@ const Home = () => {
       </Head>
       <main className="flex justify-center items-start h-full">
         <div className="mt-16 pt-8 pb-16 px-6 bg-dark-grayish-glue rounded-lg shadow-lg w-full lg:max-w-lg text-center relative flex flex-col items-center justify-center">
-          <p className="text-neon-green text-sm mb-4 font-bold">ADVICE #12</p>
+          <p className="text-neon-green text-sm mb-4 font-bold">
+            ADVICE #{advice?.id}
+          </p>
           <h1 className="text-white text-xl font-extrabold">
             <SpinningQuote isLoading={isLoading} />
-            {advice}
+            {advice?.advice}
             <SpinningQuote isLoading={isLoading} />
           </h1>
           <div className="mt-8 lg:mt-4">
