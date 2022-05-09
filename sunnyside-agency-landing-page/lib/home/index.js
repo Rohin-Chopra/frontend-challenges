@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Fragment } from 'react';
 import Navbar from '../../components/Navbar';
+import Testimonial from './components/Testimonial';
 import TwoColSection from './components/TwoColSection';
 import {
   StyledGraphicDesignContainer,
@@ -9,6 +10,8 @@ import {
   StyledHeader,
   StyledGraphicDesignAndPhotographyContainer,
   StyledTwoColSection,
+  StyledTestimonialsSection,
+  StyledTestimonialsContainer,
 } from './style';
 
 const Home = () => {
@@ -53,6 +56,29 @@ const Home = () => {
         </StyledPhotographyContainer>
         <div></div>
       </StyledTwoColSection>
+      <StyledTestimonialsSection>
+        <h4>CLIENT TESTIMONIALS</h4>
+        <StyledTestimonialsContainer>
+          <Testimonial
+            img={{ alt: 'ALT', url: '/image-emily.jpg' }}
+            name="Emily R."
+            jobTitle="Marketing Director"
+            testimonial="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
+          />
+          <Testimonial
+            img={{ alt: 'ALT', url: '/image-thomas.jpg' }}
+            name="Thomas S."
+            jobTitle="Chief Operating Officer"
+            testimonial="SunnySide's enthusiasm coupled with their keen interest in our brand's success made it a satisfiable and enjoyable experience."
+          />
+          <Testimonial
+            img={{ alt: 'ALT', url: '/image-jennie.jpg' }}
+            name="Jennie F."
+            jobTitle="Business Owner"
+            testimonial="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommend!"
+          />
+        </StyledTestimonialsContainer>
+      </StyledTestimonialsSection>
     </Fragment>
   );
 };

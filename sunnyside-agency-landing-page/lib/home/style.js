@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
   background-image: url('mobile/image-header.jpg');
@@ -45,6 +45,7 @@ export const StyledGDAndPhotographyBase = styled.div`
     margin-bottom: 1.5rem;
   }
   p {
+    max-width: 80%;
     line-height: 1.5;
   }
   @media (min-width: 992px) {
@@ -63,4 +64,28 @@ export const StyledGraphicDesignContainer = styled(StyledGDAndPhotographyBase)`
 export const StyledPhotographyContainer = styled(StyledGDAndPhotographyBase)`
   background-image: url('/desktop/image-photography.jpg');
   color: hsl(198, 62%, 26%);
+`;
+
+export const StyledTestimonialsSection = styled.section`
+  padding: 4rem 1rem;
+  h4 {
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    color: hsl(210, 4%, 67%);
+    letter-spacing: 4px;
+  }
+  @media (min-width: 992px) {
+    padding: 6rem 4rem;
+  }
+`;
+
+export const StyledTestimonialsContainer = styled.div`
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  column-gap: 1rem;
+  @media (min-width: 992px) {
+    column-gap: 0rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 `;
