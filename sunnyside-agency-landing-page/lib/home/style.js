@@ -5,6 +5,7 @@ export const StyledHeader = styled.header`
   height: 70vh;
   width: 100%;
   background-size: cover;
+  background-position: 50% 50%;
   color: #fff;
   h1 {
     text-align: center;
@@ -32,6 +33,7 @@ export const StyledTwoColSection = styled.section`
 export const StyledGDAndPhotographyBase = styled.div`
   height: 400px;
   background-size: cover;
+  background-position: 50% 50%;
   width: 100%;
   text-align: center;
   display: flex;
@@ -87,5 +89,14 @@ export const StyledTestimonialsContainer = styled.div`
   @media (min-width: 992px) {
     column-gap: 0rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+`;
+
+export const StyledGalleryContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  @media (min-width: 992px) {
+    column-gap: 0rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 `;

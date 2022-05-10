@@ -12,6 +12,7 @@ import {
   StyledTwoColSection,
   StyledTestimonialsSection,
   StyledTestimonialsContainer,
+  StyledGalleryContainer,
 } from './style';
 
 const Home = () => {
@@ -79,6 +80,32 @@ const Home = () => {
           />
         </StyledTestimonialsContainer>
       </StyledTestimonialsSection>
+      <StyledGalleryContainer>
+        <Image
+          src="/desktop/image-gallery-milkbottles.jpg"
+          width={300}
+          height={350}
+          alt="Gallery Milkbottle"
+        />
+        <Image
+          src="/desktop/image-gallery-sugarcubes.jpg"
+          width={300}
+          height={350}
+          alt="Gallery Milkbottle"
+        />
+        <Image
+          src="/desktop/image-gallery-cone.jpg"
+          width={300}
+          height={350}
+          alt="Gallery Milkbottle"
+        />
+        <Image
+          src="/desktop/image-gallery-orange.jpg"
+          width={300}
+          height={350}
+          alt="Gallery Milkbottle"
+        />
+      </StyledGalleryContainer>
     </Fragment>
   );
 };
