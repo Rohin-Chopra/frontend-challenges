@@ -47,6 +47,7 @@ const Footer = () => {
             alt="pinterest link for sunnyside"
           />
         </a>
+        <p>Challenge by Frontend Mentor</p>
         <p className="mt-4 -mb-2">
           Developed by{' '}
           <a
