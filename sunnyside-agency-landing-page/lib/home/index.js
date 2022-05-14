@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Fragment } from 'react';
+import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import Testimonial from './components/Testimonial';
 import TwoColSection from './components/TwoColSection';
@@ -106,6 +107,7 @@ const Home = () => {
           alt="Gallery Milkbottle"
         />
       </StyledGalleryContainer>
+      <Footer />
     </Fragment>
   );
 };
